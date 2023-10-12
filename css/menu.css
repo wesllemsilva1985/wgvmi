@@ -1,0 +1,31 @@
+﻿/* Estilo para botões principais */
+.button-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Cor de fundo (azul) */
+    color: #000; /* Cor do texto (preto) */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.button-primary:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse (azul mais escuro) */
+    color: #000; /* Cor do texto ao passar o mouse (preto) */
+    transform: scale(1.05); /* Efeito de escala ao passar o mouse */
+}
+
+/* Estilo para o submenu (inicialmente oculto) */
+.submenu {
+    display: none; /* Oculta o submenu por padrão */
+    position: absolute; /* Posiciona o submenu de forma absoluta */
+    background-color: #fff; /* Cor de fundo do submenu */
+    border: 1px solid #ccc; /* Borda do submenu */
+    border-radius: 5px; /* Cantos arredondados do submenu */
+    padding: 10px; /* Espaçamento interno do submenu */
+    z-index: 1000; /* Certifica-se de que o submenu esteja acima de outros elementos */
+}

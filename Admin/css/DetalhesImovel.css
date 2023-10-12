@@ -1,0 +1,192 @@
+﻿/* styles.css */
+
+.property-acoes {
+    max-width: 800px;
+    margin: 5px auto 10px; /* Alterei a margem superior para 5px */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.inserir-fotos-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px; /* Adicione margem à direita para separar os botões */
+}
+
+    .inserir-fotos-btn:hover {
+        background-color: #ff6600; /* Cor de fundo laranja mais escura no hover */
+    }
+
+#excluir-imovel {
+    background-color: #dc3545;
+}
+
+.numeroImagensCarregadas {
+    display: inline-block; /* Mostrar como um bloco de linha (mesma linha) */
+    text-align: left; /* Manter o alinhamento do texto à esquerda */
+    margin-right: 10px; /* Adicione margem à direita para separar do botão, se necessário */
+}
+
+/* Estilo para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    z-index: 9999; /* Valor alto para sobrepor outros elementos */
+}
+
+.modal-content {
+    background-color: #fff;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+/* Estilo para o botão de fechar o modal */
+.fechar-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Estilo para as imagens na prévia */
+.image-preview-container {
+    overflow: hidden; /* Evita que as imagens ultrapassem o container */
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.image-preview {
+    float: left;
+    margin-right: 10px; /* Espaçamento entre as imagens, ajuste conforme necessário */
+    margin-bottom: 10px; /* Espaçamento vertical entre as imagens */
+    width: 150px; /* Largura desejada */
+    height: 130px; /* A altura se ajustará automaticamente mantendo a proporção */
+}
+
+.botao-direita {
+    float: right;
+    margin-right: 10px; /* Adiciona um espaçamento de 10px à direita do botão */
+}
+
+.property-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto 10px; /* Adicionei 10px na margem inferior */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc; /* Adicionei uma borda */
+    border-radius: 5px; /* Bordas arredondadas com raio de 5px */
+}
+
+.property-info {
+    flex-grow: 1;
+    padding-left: 20px;
+    max-width: 50%; /* Adicionado para manter o texto dentro da metade esquerda */
+}
+
+    .property-info h2 {
+        color: #333;
+    }
+
+    .property-info p {
+        color: #666;
+        margin: 5px 0;
+    }
+
+    .property-info strong {
+        font-weight: bold;
+        color: #333;
+    }
+
+.property-image {
+    max-width: 50%;
+    text-align: right; /* Adicionado para alinhar a imagem à direita */
+}
+
+    .property-image img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+.property-gallery {
+    max-width: 800px;
+    margin: 10px auto; /* Espaço de 10px acima e abaixo */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc; /* Adicionei uma borda */
+    border-radius: 5px; /* Bordas arredondadas com raio de 5px */
+}
+
+    .property-gallery h3 {
+        color: #333;
+    }
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+    .image-gallery img {
+        max-width: calc(20% - 10px);
+        margin: 5px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+.property-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 20px auto 10px; /* Adicionei 10px na margem inferior */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc; /* Adicionei uma borda */
+    border-radius: 5px; /* Bordas arredondadas com raio de 5px */
+    color: #333; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+@media screen and (max-width: 768px) {
+    .property-details {
+        flex-direction: column;
+    }
+
+    .property-info,
+    .property-image {
+        max-width: 100%;
+    }
+}
+
+.property-gallery img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}

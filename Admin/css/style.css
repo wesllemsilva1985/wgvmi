@@ -1,0 +1,78 @@
+﻿/* Estilo para a tag <header> */
+header {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branca */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhar o conteúdo ao centro */
+}
+
+    /* Estilizar o logotipo dentro do <header> */
+    header h1 {
+        font-size: 36px; /* Tamanho da fonte maior para o título */
+        margin: 0; /* Remover margens padrão do título */
+    }
+
+    /* Estilizar a navegação dentro do <header> */
+    header nav ul {
+        list-style: none; /* Remover marcadores de lista */
+        padding: 0; /* Remover espaçamento interno da lista */
+    }
+
+        header nav ul li {
+            display: inline-block; /* Exibir os itens da lista lado a lado */
+            margin-right: 20px; /* Espaçamento entre os itens da lista */
+        }
+
+            header nav ul li a {
+                text-decoration: none; /* Remover sublinhado dos links */
+                color: #fff; /* Cor do texto branca para links */
+                font-weight: bold; /* Texto em negrito para links */
+            }
+
+/* Estilo para a tag <main> */
+main {
+    background-color: #f5f5f5; /* Cor de fundo cinza claro */
+    color: #333; /* Cor do texto escura */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 18px; /* Tamanho da fonte padrão */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+    /* Estilizar links dentro do <main> */
+    main a {
+        text-decoration: underline; /* Sublinhar links */
+        color: #0077cc; /* Cor azul para links */
+        font-weight: bold; /* Texto em negrito para links */
+    }
+
+    /* Estilizar títulos dentro do <main> */
+    main h2 {
+        font-size: 24px; /* Tamanho da fonte para títulos */
+        margin-top: 20px; /* Espaçamento superior para títulos */
+        color: #333; /* Cor do texto escura para títulos */
+    }
+
+    /* Estilizar parágrafos dentro do <main> */
+    main p {
+        margin-bottom: 20px; /* Espaçamento inferior para parágrafos */
+    }
+/* Estilo para a tag <footer> */
+footer {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto branca */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhar o conteúdo ao centro */
+}
+
+    /* Estilizar links dentro do <footer> */
+    footer a {
+        text-decoration: none; /* Remover sublinhado dos links */
+        color: #fff; /* Cor do texto branca para links */
+        font-weight: bold; /* Texto em negrito para links */
+    }
+
+    /* Estilizar o texto de direitos autorais no rodapé */
+    footer p {
+        font-size: 14px; /* Tamanho da fonte menor para texto de direitos autorais */
+        margin: 10px 0; /* Espaçamento superior e inferior */
+    }

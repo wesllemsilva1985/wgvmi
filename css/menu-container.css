@@ -1,0 +1,11 @@
+﻿/* Estilo para o menu-container */
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    color: white; /* Cor do texto no menu (opcional) */
+    z-index: 999; /* Certifique-se de que o menu esteja acima de outros elementos (opcional) */
+}

@@ -1,0 +1,203 @@
+﻿/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: navy; /* Cor de fundo azul-marinho */
+    color: #fff; /* Cor do texto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+
+/* Estilos do logotipo */
+.logo img {
+    max-width: 100px; /* Define o tamanho máximo do logotipo */
+}
+
+/* Estilos do menu de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+    nav ul li {
+        margin: 0 10px; /* Espaço entre os itens do menu */
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s; /* Efeito de transição de cor ao passar o mouse */
+        }
+
+            nav ul li a:hover {
+                color: #ff6600; /* Cor ao passar o mouse */
+            }
+
+/* Estilos das informações da empresa */
+.info-empresa {
+    text-align: right;
+    font-size: 12px; /* Tamanho da fonte original */
+}
+
+    .info-empresa p {
+        margin: 0;
+        font-size: 12px; /* Tamanho de fonte reduzido */
+    }
+
+        .info-empresa p:first-child {
+            font-weight: bold;
+        }
+
+
+/* Estilos dos botões de menu */
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Efeito de transição de cor ao passar o mouse */
+    background-color: #3498db; /* Cor de fundo azul suave */
+    padding: 8px 12px; /* Espaçamento interno dos botões */
+    border-radius: 4px; /* Borda arredondada */
+    font-size: 80%; /* Tamanho reduzido em 20% */
+}
+
+    nav ul li a:hover {
+        color: #fff;
+        background-color: #2980b9; /* Cor de fundo ao passar o mouse */
+    }
+
+.main-container {
+    width: 95%;
+    min-height: 100vh; /* Isso faz com que o contêiner tenha pelo menos a altura da janela do navegador */
+   
+    background-image: url('../imagens/fundo-index.jpg'); /* Substitua pelo caminho real da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o container */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-position: center center; /* Centraliza a imagem no container */
+    padding: 20px; /* Espaçamento interno para o conteúdo, se desejado */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    color: white; /* Cor do texto dentro do contêiner */
+    /*/ background-color: black; /* Cor de fundo preto */
+}
+
+
+
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 39px;
+    background-color: #87CEEB;
+    color: #000;
+    padding: 0; /* Removemos o espaçamento interno */
+    text-align: center;
+    font-size: 8px; /* Tamanho da fonte em 10px */
+    line-height: 1; /* Removemos o espaçamento vertical entre os textos */
+    font-weight: bold;
+}
+
+    .footer-container a {
+        color: #ff6600;
+        text-decoration: none;
+    }
+
+        .footer-container a:hover {
+            text-decoration: underline;
+        }
+
+/* Suponhamos que a altura do cabeçalho (header) seja de 50px e a altura do rodapé (footer) seja de 30px */
+
+.header {
+    height: 50px; /* Altura do cabeçalho */
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+    font-size: 18px; /* Tamanho da fonte do cabeçalho */
+    padding: 10px; /* Espaçamento interno do cabeçalho */
+    text-align: center; /* Alinhamento de texto ao centro no cabeçalho */
+}
+
+.main-index {
+    width: 94%; /* Largura de 100% da tela */
+    background-color: #f0f0f0; /* Cor de fundo */
+    color: #333; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 20px; /* Espaçamento interno de 20px */
+    text-align: center; /* Alinhamento de texto ao centro */
+    height: calc(100vh - 50px - 30px); /* Calcula a altura vertical disponível */
+    position: sticky;
+    top: 100px;
+}
+
+
+
+.welcome-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px; /* Reduzimos o espaçamento interno para diminuir o tamanho */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .welcome-section h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .welcome-section img {
+        max-width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .welcome-section p {
+        font-size: 18px;
+        color: #777;
+        margin-top: 10px; /* Reduzimos o espaço superior para diminuir o tamanho */
+    }
+
+
+.welcome-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+    .welcome-section h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .welcome-section img {
+        max-width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .welcome-section p {
+        font-size: 13px; /* Alterado para 13px */
+        color: #ff0000; /* Cor vermelha (#ff0000) */
+        font-weight: bold; /* Texto em negrito */
+        margin-top: 10px;
+    }
+
+
+.footer {
+    height: 30px; /* Altura do rodapé */
+    background-color: #87CEEB; /* Cor de fundo do rodapé */
+    color: #000; /* Cor do texto do rodapé */
+    font-size: 12px; /* Tamanho da fonte do rodapé */
+    text-align: center; /* Alinhamento de texto ao centro no rodapé */
+}
+

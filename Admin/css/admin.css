@@ -1,0 +1,138 @@
+﻿/* Variáveis para as cores */
+:root {
+    --navy-blue: #263238;
+    --white: #fff;
+    --dark-gray: #333;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    background-color: #3C4043;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    z-index: 1; /* Define a ordem de empilhamento do cabeçalho acima do menu */
+}
+
+    .header h1 {
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    z-index: 2;
+}
+
+/* Estilos para o menu */
+nav {
+    background-color: #007ACC;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    z-index: 2; /* Define a ordem de empilhamento do menu acima do conteúdo */
+    width: 100%;
+    position: relative; /* Adicionado para criar um contexto de posicionamento relativo */
+    top: 0; /* Ajustado para 0 para que o menu fique sobre o cabeçalho */
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+        nav ul li {
+            margin-right: auto;
+            position: relative;
+        }
+
+            nav ul li:last-child {
+                margin-right: 0;
+            }
+
+            nav ul li a {
+                font-size: 14px;
+                color: var(--white);
+                text-decoration: none;
+                transition: background-color 0.3s;
+                padding: 5px 15px;
+                display: block;
+            }
+
+                nav ul li a:hover {
+                    background-color: var(--white);
+                    color: var(--navy-blue);
+                    border-radius: 5px;
+                }
+
+/* Estilos para o submenu */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    font-size: 14px;
+    color: var(--white);
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+    .dropdown-content a {
+        color: #007ACC;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s;
+    }
+
+        .dropdown-content a:hover {
+            background-color: var(--navy-blue);
+            color: var(--white);
+        }
+
+/* Mostrar o submenu quando o botão é clicado */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos para o main */
+.main {
+    height: calc(100vh - 100px); /* define a altura do main como a altura da tela menos a altura do cabeçalho e do menu */
+    overflow-y: auto; /* permite a rolagem vertical se o conteúdo for maior que a altura do main */
+    margin-top: 100px; /* define a margem superior para deixar espaço para o cabeçalho e o menu */
+    margin-bottom: 50px; /* define a margem inferior para deixar espaço para o rodapé */
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background-color: var(--navy-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: fixed; /* fixa o rodapé no final da página */
+    bottom: 0; /* define a distância do final para zero */
+    left: 0; /* define a distância da esquerda para zero */
+    right: 0; /* define a distância da direita para zero */
+    z-index: 1; /* define a ordem de empilhamento do rodapé acima do conteúdo */
+}
+
+    .footer p {
+        color: var(--white);
+        font-size: 14px;
+    }

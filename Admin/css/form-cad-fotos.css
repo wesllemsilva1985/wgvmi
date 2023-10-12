@@ -1,0 +1,85 @@
+﻿.image-upload-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.file-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.file-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* Estilo base para o elemento FileUpload */
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+    /* Estilização para quando o cursor passa sobre o elemento */
+    .custom-file-upload:hover {
+        background-color: #0056b3;
+    }
+
+    /* Oculte o elemento de entrada de arquivo subjacente */
+    .custom-file-upload input[type="file"] {
+        display: none;
+    }
+
+.fotos-cad {
+    width: 80%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    background-color: orange; /* Define o fundo como laranja */
+    border: 2px solid black; /* Adiciona uma borda preta de 2px */
+    border-radius: 10px; /* Borda com cantos arredondados */
+    padding: 20px; /* Espaçamento interno para o conteúdo */
+}

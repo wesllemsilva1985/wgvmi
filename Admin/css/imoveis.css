@@ -1,0 +1,130 @@
+﻿/* Estilo para o posicionamento geral do formulário */
+#form1 {
+    width: 80%; /* Tamanho horizontal de 80% */
+    margin: 10px auto; /* Centralizado na tela e com espaçamento de 10px do topo */
+    padding: 20px; /* Espaçamento interno de 20px para o conteúdo do formulário */
+    background-color: #F5DEB3; /* Cor de fundo Areia Bege (#F5DEB3) */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombreamento */
+}
+
+/* Estilo para os grupos de rótulo e campo */
+.form-group {
+    display: block; /* Faz com que cada grupo seja exibido como um bloco */
+    margin-bottom: 20px; /* Espaço entre grupos */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+    /* Estilo para os rótulos */
+    .form-group label {
+        display: block; /* Faz com que os rótulos sejam exibidos como blocos */
+        font-size: 16px; /* Tamanho da fonte de 16px */
+        font-weight: bold; /* Texto em negrito */
+        color: #000; /* Cor preta */
+        margin-bottom: 5px; /* Espaço inferior entre o rótulo e o campo */
+    }
+
+    /* Estilo para os campos de entrada de texto e caixas de seleção */
+    .form-group input[type="text"],
+    .form-group select {
+        width: 100%; /* Ocupa toda a largura disponível */
+        padding: 5px;
+        font-size: 14px;
+        background-color: #fff; /* Cor de fundo branca no modo estático */
+        border: 1px solid #000; /* Borda preta de 1px no modo estático */
+        border-radius: 5px; /* Cantos arredondados */
+        transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    }
+
+        /* Estilo para os campos de entrada de texto e caixas de seleção quando recebem foco */
+        .form-group input[type="text"]:focus,
+        .form-group select:focus {
+            background-color: #f0e68c; /* Amarelo suave ao receber foco */
+            border: 1px solid #000; /* Borda preta de 1px ao receber foco */
+        }
+
+    /* Estilo para o campo de descrição */
+    .form-group textarea {
+        width: 100%; /* Ocupa toda a largura disponível */
+        padding: 5px;
+        font-size: 14px;
+        background-color: #fff; /* Cor de fundo branca no modo estático */
+        border: 1px solid #000; /* Borda preta de 1px no modo estático */
+        border-radius: 5px; /* Cantos arredondados */
+        transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    }
+
+        /* Estilo para o campo de descrição quando recebe foco */
+        .form-group textarea:focus {
+            background-color: #f0e68c; /* Amarelo suave ao receber foco */
+            border: 1px solid #000; /* Borda preta de 1px ao receber foco */
+        }
+
+    /* Estilo para os grupos de rótulo e campo quando estão lado a lado */
+    .form-group.form-group-inline {
+        display: inline-block;
+        margin-right: 10px; /* Espaço entre os elementos */
+        width: calc(33.00% - 10px); /* Divide igualmente a largura em 3 com 10px de espaço entre eles */
+    }
+
+    /* Estilo para os blocos Título e Tipo lado a lado */
+    .form-group.form-group-inline-title-type {
+        display: inline-block;
+        margin-right: 10px; /* Espaço entre os elementos */
+        width: calc(33% - 10px); /* Divide igualmente a largura em 2 com 10px de espaço entre eles */
+    }
+
+/* Estilo para a imagem de pré-visualização */
+.image-preview {
+    max-width: 150px; /* Tamanho máximo da imagem de 150px de largura */
+    cursor: pointer; /* Cursor do mouse como "hand" (mãozinha) ao passar o mouse */
+    border: 1px solid #000; /* Borda preta */
+}
+
+/* Estilo para o botão "Salvar" */
+.btn-salvar {
+    display: inline-block; /* Exibir como um elemento de bloco */
+    padding: 10px 20px; /* Preenchimento interno de 10px na vertical e 20px na horizontal */
+    font-size: 16px; /* Tamanho da fonte de 16px */
+    font-weight: bold; /* Texto em negrito */
+    background-color: #008000; /* Cor de fundo verde */
+    color: #fff; /* Cor do texto branco */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Cursor do mouse como "hand" (mãozinha) ao passar o mouse */
+    transition: background-color 0.3s; /* Efeito de transição suave na cor de fundo */
+}
+
+    /* Estilo para o botão "Salvar" quando hover (passar o mouse) */
+    .btn-salvar:hover {
+        background-color: #006400; /* Cor de fundo verde mais escura ao passar o mouse */
+    }
+
+.error-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+    .error-tooltip .error-message {
+        display: none;
+        position: absolute;
+        background-color: #FF0000; /* Altere para vermelho */
+        color: #FFFFFF; /* Altere para branco */
+        padding: 5px;
+        border-radius: 5px;
+        z-index: 1;
+        top: 55px; /* Ajuste a posição vertical conforme necessário (por exemplo, 10px) */
+        left: 35%;
+        transform: translateX(-50%);
+    }
+
+    .error-tooltip:hover .error-message {
+        display: block;
+    }
+
+.error-message {
+    color: red; /* Define a cor do texto para vermelho ou outra cor de sua escolha */
+    font-weight: bold; /* Define o peso da fonte como negrito ou o estilo que desejar */
+    display: none; /* Inicialmente, a mensagem de erro não será exibida */
+    margin-top: 5px; /* Adiciona um espaço superior para separar a mensagem de outros elementos */
+}

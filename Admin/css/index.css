@@ -1,0 +1,20 @@
+﻿#sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ff6600; /* Fundo laranja */
+}
+
+#content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+#scrolling-text {
+    background-color: #f0f0f0;
+    padding: 10px;
+    height: 300px;
+    overflow: hidden;
+}

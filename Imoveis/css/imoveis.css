@@ -1,0 +1,104 @@
+﻿/* Estilos para o container */
+.container {
+    width: 80%;
+    margin: 5px auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para o contêiner das células */
+.celula-container {
+    display: flex; /* Cria um layout flexível */
+    justify-content: space-between; /* Distribui as células uniformemente com espaço entre elas */
+    align-items: center; /* Alinha as células verticalmente ao centro */
+    flex-wrap: wrap; /* Faz com que as células quebrem para a próxima linha quando não couberem */
+}
+
+/* Estilos para a classe titu-lado */
+.titu-lado {
+    font-size: 10px; /* Tamanho da fonte de 10 pixels */
+    color: #ffffff; /* Cor da fonte branca */
+    display: inline-block; /* Exibe as divs como blocos em linha */
+    margin-right: 10px; /* Espaçamento direito de 10 pixels entre as divs */
+    /* Outros estilos personalizados */
+}
+
+/* Estilos para as células */
+.celula {
+    flex: 1; /* As células ocupam espaço igualmente dentro do container */
+    padding: 10px; /* Espaçamento interno das células (exemplo) */
+    border: 1px solid #ccc; /* Borda para as células (exemplo) */
+    font-size: 12px; /* Tamanho da fonte para as células (exemplo) */
+    color: #666; /* Cor do texto para as células (exemplo) */
+    /* Outros estilos personalizados */
+}
+
+/* Estilos para as divs dentro da célula */
+.box {
+    flex: 1; /* Cada div ocupará uma parte igual do espaço disponível */
+    margin: 5px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+/* Estilos para a classe aimov-naim */
+.aimov-naim {
+    position: relative; /* Define como uma posição relativa */
+    top: 2px; /* Alinha o elemento 2 pixels abaixo do topo do conteúdo principal */
+    width: 95%; /* Largura de 90% para centralizar o elemento */
+    padding: 10px; /* Espaçamento interno de 10 pixels em todas as direções */
+    background-color: #e97219; /* Cor de fundo laranja claro */
+    color: #ffffff; /* Cor do texto branco */
+    font-size: 12px; /* Tamanho da fonte 12 pixels */
+    font-weight: bold; /* Texto em negrito */
+    margin: 0 auto; /* Centraliza horizontalmente com margens automáticas */
+    text-align: left; /* Alinha o texto à esquerda */
+    /* Outros estilos personalizados */
+}
+
+/* Estilos para a classe imov-cel-titulos */
+.imov-cel-titulos {
+    position: relative; /* Define como uma posição relativa */
+    font-size: 12px; /* Tamanho da fonte de 12 pixels */
+    width: 95%; /* Largura de 90% para centralizar o elemento */
+    padding: 10px; /* Espaçamento interno de 10 pixels em todas as direções */
+    background-color: #db8e54; /* Cor de fundo laranja claro */
+    color: #ffffff; /* Cor do texto branco */
+    font-weight: bold; /* Texto em negrito (exemplo) */
+    margin: 2px auto 0; /* Espaçamento superior de 2 pixels, centraliza horizontalmente com margens automáticas */
+    text-align: left; /* Alinha o texto à esquerda */
+    /* Outros estilos personalizados */
+}
+
+/* Estilos para a classe imov-titulo */
+.imov-titulo {
+    font-size: 14px; /* Tamanho da fonte (exemplo) */
+    color: #ffffff; /* Cor da fonte preta (exemplo) */
+    font-weight: bold; /* Texto em negrito (exemplo) */
+    padding-left: 10px; /* Espaçamento de 5 pixels à esquerda */
+    /* Outros estilos personalizados */
+}
+
+/* Estilos para a classe imov-cel-dados */
+.imov-cel-dados {
+    position: relative; /* Define como uma posição relativa */
+    font-size: 12px; /* Tamanho da fonte de 12 pixels */
+    width: 95%; /* Largura de 90% para centralizar o elemento */
+    padding: 10px; /* Espaçamento interno de 10 pixels em todas as direções */
+    background-color: #db8e54; /* Cor de fundo laranja claro */
+    color: #ffffff; /* Cor do texto branco */
+    font-weight: bold; /* Texto em negrito (exemplo) */
+    margin: 2px auto 0; /* Espaçamento superior de 2 pixels, centraliza horizontalmente com margens automáticas */
+    text-align: left; /* Alinha o texto à esquerda */
+    /* Outros estilos personalizados */
+}
+
+.dados-lado {
+    font-size: 10px; /* Tamanho da fonte de 10 pixels */
+    color: #ffffff; /* Cor da fonte branca */
+    display: inline-block; /* Exibe as divs como blocos em linha */
+    margin-right: 10px; /* Espaçamento direito de 10 pixels entre as divs */
+    /* Outros estilos personalizados */
+}

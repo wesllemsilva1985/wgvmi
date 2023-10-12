@@ -1,0 +1,126 @@
+﻿/* Estilo para o container principal com margens superior e inferior de 10px */
+.container {
+    max-width: 90%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid black; /* Borda de 1px na cor preta */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra com 10px de deslocamento, suavizada */
+    padding: 20px; /* Espaçamento interno */
+    display: flex;
+    align-items: center;
+}
+
+
+/* Estilo para a parte da imagem à esquerda */
+.imagem {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que a imagem não ultrapasse as bordas */
+    width: 150px;
+    height: 159px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+
+    .imagem img {
+        max-width: 150px;
+        height: 150px;
+    }
+
+/* Estilo para a imagem com efeito hover */
+.hover-effect {
+    transition: opacity 0.3s; /* Efeito de transição para a opacidade */
+}
+
+.hover-effect:hover {
+    opacity: 0.8; /* Opacidade ao passar o mouse */
+}
+
+/* Estilo para a parte de conteúdo à direita */
+.conteudo {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */
+    justify-content: flex-start; /* Alinha no topo verticalmente */
+    height: 150px; /* Define a altura para 189px */
+}
+
+
+/* Estilo para o título com todas as características desejadas */
+.titulo {
+    font-size: 24px; /* Tamanho da fonte 24px */
+    text-align: center; /* Centraliza horizontalmente */
+    font-weight: bold; /* Texto em negrito */
+    color: black; /* Cor do texto preta */
+    font-family: Verdana, sans-serif; /* Fonte Verdana com fallback para sans-serif */
+}
+
+/* Estilo para a descrição com fundo branco, borda e fonte personalizada */
+.descricao {
+    font-family: Verdana, sans-serif; /* Define a fonte como Verdana e fallback para fontes sans-serif */
+    font-size: 14px; /* Tamanho da fonte de 12px */
+    color: black; /* Cor do texto preta */
+    margin-bottom: 10px; /* Espaço de 10px na parte inferior */
+    text-align: left; /* Alinha à esquerda */
+    background-color: white; /* Fundo branco */
+    padding: 8px; /* Espaçamento interno para destacar o fundo */
+    height: 80px; /* Altura definida como 80px */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassar a altura definida */
+    margin-top: 10px; /* Adiciona um espaço de 10px na parte superior */
+    border: 1px solid black; /* Borda de 1px na cor preta */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+
+/* Estilo para o valor com todas as características desejadas */
+.valor {
+    font-size: 18px; /* Tamanho da fonte 14px */
+    font-weight: bold; /* Texto em negrito */
+    color: black; /* Cor do texto preta */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra do texto */
+    font-family: Verdana, sans-serif; /* Fonte Verdana com fallback para sans-serif */
+    text-align: right; /* Alinhado à direita */
+    margin-top: auto; /* Alinha no rodapé verticalmente */
+}
+
+/* Estilo para o quadro de aviso "Estamos em Desenvolvimento" */
+.aviso-desenvolvimento {
+    background-color: #f0f0f0; /* Cor de fundo */
+    border: 2px solid #3498db; /* Borda azul */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-size: 18px; /* Tamanho da fonte */
+    color: #3498db; /* Cor do texto azul */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra suavizada */
+    width: 80%; /* Largura de 80% */
+    margin: 20px auto 0; /* Margem superior de 20px, centralizado horizontalmente */
+}
+
+    /* Estilo para o texto dentro do quadro */
+    .aviso-desenvolvimento p {
+        margin: 0; /* Remove margem padrão do parágrafo */
+        font-weight: bold; /* Texto em negrito */
+        font-style: italic; /* Texto em itálico */
+    }
+
+        /* Estilo para a primeira linha do texto */
+        .aviso-desenvolvimento p:first-of-type {
+            font-size: 24px; /* Tamanho maior para a primeira linha */
+            margin-bottom: 10px; /* Espaço inferior */
+        }
+
+        /* Estilo para a segunda linha do texto */
+        .aviso-desenvolvimento p:last-of-type {
+            font-size: 16px; /* Tamanho menor para a segunda linha */
+        }
+
+
+    /* Estilo para um texto dentro do quadro */
+    .aviso-desenvolvimento p {
+        margin: 0;
+    }

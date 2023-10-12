@@ -1,0 +1,58 @@
+﻿/* Estilo para o título "Cadastro de Imóvel" no topo fora do formulário */
+.cadastro-imovel {
+    width: 60%; /* Definir largura para 60% */
+    margin: 0 auto; /* Centralizar o formulário horizontalmente */
+    text-align: center; /* Centralizar o texto */
+    background-color: orange; /* Cor de fundo laranja */
+    color: #fff; /* Cor do texto branca */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px 8px 0 0; /* Cantos arredondados somente no topo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombreamento preto */
+}
+
+/* Estilo para campos de entrada de texto e seleção */
+.form-group {
+    display: flex; /* Usar flexbox para centralizar os campos horizontalmente */
+    align-items: center; /* Centralizar verticalmente os campos */
+    margin-bottom: 5px; /* Espaçamento inferior entre os campos */
+}
+
+    /* Estilo para rótulos de campo */
+    .form-group label {
+        flex: 1; /* Ocupar todo o espaço disponível para alinhar à esquerda */
+    }
+
+/* Estilo para campos de entrada de texto e seleção */
+.form-control {
+    flex: 2; /* Ocupar mais espaço do que o rótulo para alinhar à direita */
+    width: 100%; /* Largura total do campo */
+    padding: 5px; /* Espaçamento interno */
+    border: 1px solid #e0e0e0; /* Borda suave */
+    border-radius: 5px; /* Cantos arredondados */
+    font-size: 12px; /* Tamanho da fonte ajustado para 12px */
+    transition: border-color 0.2s ease-in-out; /* Transição suave para a cor da borda */
+}
+
+/* Estilo para o botão de envio */
+.btn-primary {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Cantos arredondados */
+    padding: 12px 20px; /* Espaçamento interno ajustado */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.2s ease-in-out; /* Transição suave para a cor de fundo */
+    margin-left: auto; /* Margem esquerda automática para alinhar à direita */
+    display: block; /* Exibir como bloco para ocupar a largura total disponível */
+}
+
+    /* Estilo para o botão de envio ao passar o mouse */
+    .btn-primary:hover {
+        background-color: #0056b3; /* Cor de fundo alterada no hover */
+    }
+
+/* Estilo para adicionar um efeito de foco suave nos campos */
+.form-control:focus {
+    border-color: #007bff; /* Cor da borda alterada ao receber foco */
+}

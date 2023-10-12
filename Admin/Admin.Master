@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="wgvmi.Admin.Admin" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <title>Admin Panel</title>
+    <link href="css/admin.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1>WGVMI - Painel ADM</h1>
+        <img src="seu-logo.png" alt="Logo" class="logo" />
+    </header>
+
+    <!-- MENU-TOP -->
+    <nav>
+        <ul>
+            <li><a href="www.wgvmi.com.br" target="_blank">Site</a></li>
+            <li><a href="/Admin">Início</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Imóveis</a>
+                <div class="dropdown-content">
+                    <a href="/Admin/Imoveis/CadastroImoveis.aspx">Cadastrar</a>
+                    <a href="/Admin/Imoveis/ListarImoveis.aspx">Listar Imóveis</a>
+                    <a href="/Admin/Imoveis/ListarTodasFotos.aspx">Listar Imagens</a>
+                </div>
+            </li>
+            <li><a href="#">Relatórios</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </main>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".img-tooltip").hover(function () {
+            var tooltip = $(this).next(".tooltip");
+            tooltip.show();
+        }, function () {
+            var tooltip = $(this).next(".tooltip");
+            tooltip.hide();
+        });
+    });
+</script>
+
+</body>
+</html>

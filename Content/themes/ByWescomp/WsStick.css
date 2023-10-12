@@ -1,0 +1,89 @@
+﻿.carousel-container {
+    background-color: gray; /* Cor de fundo cinza */
+    padding: 5px; /* Espaçamento interno de 5px para os quatro lados */
+    border-radius: 10px; /* Borda arredondada */
+    max-width: 960px;
+    margin: 50px auto;
+}
+
+.carousel {
+    margin: 50px auto;
+    max-width: 960px;
+}
+
+.slider {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+/* Personalize os indicadores de próxima e anterior do slider (círculos) */
+.slick-prev,
+.slick-next {
+    font-size: 0; /* Definir tamanho de fonte como 0 para ocultar o texto */
+    line-height: 0; /* Definir a altura da linha como 0 para ocultar o texto */
+    color: transparent; /* Tornar a cor do texto transparente para ocultar */
+    background-color: black; /* Fundo preto para os círculos */
+    border: none; /* Remover borda */
+    width: 40px; /* Largura dos círculos */
+    height: 40px; /* Altura dos círculos */
+    border-radius: 50%; /* Borda arredondada para criar um círculo */
+    display: flex; /* Usar flex para centralizar ícone verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    cursor: pointer; /* Mude o cursor para a mão ao passar o mouse sobre os círculos */
+    outline: none; /* Remover a borda de foco padrão */
+}
+
+    /* Estilize os círculos quando o mouse estiver sobre eles */
+    .slick-prev:hover,
+    .slick-next:hover,
+    .slick-prev:focus,
+    .slick-next:focus {
+        background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo dos círculos ao passar o mouse ou focar */
+    }
+.imagem-contida {
+    max-width: 300px;
+    max-height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.imagem-container {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    display: flex; /* Usar display flex para alinhar verticalmente e horizontalmente */
+    justify-content: center; /* Alinhar horizontalmente ao centro */
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
+
+    .imagem-container:hover {
+        transform: scale(1.1); /* Amplie a imagem em 10% no hover */
+        cursor: pointer; /* Altere o cursor para apontador no hover */
+    }
+/* Botão de Fechamento */
+/* Estilo personalizado para o botão de fechar no modal */
+.close {
+    position: absolute !important;
+    top: 20px !important;
+    right: 30px !important;
+    color: #ff0000 !important;
+    font-size: 30px !important;
+    z-index: 9999 !important;
+}
+
+
+    .close:hover {
+        color: #ccc; /* Cor do ícone do botão de fechar ao passar o mouse */
+    }

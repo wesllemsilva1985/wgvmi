@@ -1,0 +1,197 @@
+﻿/* Estilos para o top-container */
+.top-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Reduzido para 80px */
+    background-color: #87CEEB; /* Cor de fundo azul do céu */
+    border-bottom: 1px solid #ccc; /* Borda na parte inferior em cinza claro */
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 24px;
+    z-index: 999; /* Ajusta o nível z para garantir que esteja na parte superior */
+}
+
+/* Estilos para a logo */
+.logo {
+    position: absolute;
+    top: 50%; /* Centraliza verticalmente */
+    left: calc(0px + 60px); /* Centraliza horizontalmente entre a borda esquerda do top-container e a borda esquerda do center-element */
+    transform: translate(-50%, -50%); /* Centraliza verticalmente e horizontalmente */
+    width: auto; /* Ajusta o tamanho automaticamente */
+    height: auto; /* Ajusta o tamanho automaticamente */
+    max-height: 60px; /* Altura máxima de 60px */
+    max-width: 60px; /* Largura máxima de 60px */
+    background-color: transparent; /* Transparente para a logo */
+    /* Adicione sua logo aqui como uma imagem de fundo */
+}
+
+/* Estilos para o elemento central */
+.center-element {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 80%;
+    height: 60px;
+    background-color: transparent; /* Cor de fundo transparente */
+    border: 2px solid #000; /* Bordas pretas */
+    text-align: center; /* Texto centralizado horizontalmente */
+    line-height: 60px; /* Texto centralizado verticalmente */
+    font-size: 18px;
+    color: #000; /* Cor do texto */
+}
+
+/* Estilos para o menu */
+.menu {
+    position: absolute;
+    top: 80px;
+    left: 80px; /* Deixa espaço para o side-container */
+    width: 100%;
+    height: 20px;
+    background-color: #3498db; /* Cor para o menu */
+    /* Adicione os botões do menu aqui */
+}
+
+/* Estilos para o container lateral esquerdo */
+.side-container {
+    position: fixed;
+    top: 80px; /* Começa logo abaixo do top-container */
+    left: 0;
+    width: 100px; /* Largura de 100px */
+    height: calc(100% - 180px); /* Ajustado verticalmente entre top-container e footer-container */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para o texto "Cadastro" no topo do side-container */
+.cadastro-text {
+    margin-top: 5px; /* Espaço de 5px do topo */
+    font-size: 14px; /* Tamanho da fonte */
+    text-align: center;
+}
+
+/* Estilos para os botões */
+.link-button {
+    width: 90%;
+    height: 15px;
+    padding: 3px 0;
+    background-color: #3498db; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    text-decoration: none;
+    border-radius: 5px; /* Cantos arredondados suaves */
+    font-size: 12px; /* Tamanho da fonte ajustado ao tamanho do botão */
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efeito de mouse */
+}
+
+    .link-button:hover {
+        background-color: #2980b9; /* Cor de fundo ao passar o mouse */
+    }
+
+/* Estilos para o container de rodapé */
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+/* Estilos para o container central */
+.main-container {
+    margin-left: 250px;
+    margin-top: 150px;
+}
+
+/* Estilos para o elemento de lista de registros */
+.listing-element {
+    width: 90%;
+    margin: 5px auto;
+    background-color: #FFFFCC; /* Cor de fundo amarelo claro */
+    border: 1px solid #000; /* Borda preta de 1px */
+    padding: 5px;
+}
+
+/* Estilos para cada coluna */
+.column {
+    display: inline-block;
+    width: 15%; /* Ajuste a largura conforme necessário */
+    margin-right: 5px;
+    background-color: burlywood; /* Cor de fundo amarelo claro */
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Texto truncado com reticências (...) se ultrapassar o limite */
+}
+
+/* Estilos para a descrição com limite de 10 caracteres */
+.description {
+    width: 25%; /* Ajuste a largura conforme necessário */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; /* Texto truncado com reticências (...) se ultrapassar o limite */
+}
+
+/* Estilos para o elemento development-text */
+.development-text {
+    font-size: 16px;
+    color: red; /* Cor vermelha */
+    font-weight: bold;
+    text-align: center; /* Alinhamento centralizado */
+    margin-top: 10px; /* Espaçamento superior de 10px */
+}
+
+/* Estilos para a tabela */
+.custom-table {
+    width: 100%;
+    background-color: #e6f7ff; /* Cor de fundo azul claro */
+    font-size: 13px;
+}
+
+    /* Estilos para as células das colunas */
+    .custom-table th {
+        font-weight: bold; /* Texto em negrito */
+    }
+
+    .custom-table th, .custom-table td {
+        padding: 8px; /* Espaçamento interno das células */
+    }
+
+    /* Estilos para as colunas individuais, ajuste as larguras conforme necessário */
+    .custom-table .col-id {
+        width: 5%;
+    }
+
+    .custom-table .col-titulo {
+        width: 20%;
+    }
+
+    .custom-table .col-tipo {
+        width: 15%;
+    }
+
+    .custom-table .col-cidade {
+        width: 15%;
+    }
+
+    .custom-table .col-valor {
+        width: 15%;
+    }
+
+    .custom-table .col-descricao {
+        width: 30%;
+    }

@@ -1,0 +1,182 @@
+﻿/* imovel.css */
+
+/* Estilo para a seção com a classe "section-titulo-top" */
+.section-titulo-top {
+    background-color: #f8f8f8;
+    padding: 20px; /* Reduzindo o preenchimento superior e inferior */
+    margin: 20px auto; /* Centralizar horizontalmente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 116, 204, 0.5); /* Sombras azul claro para as bordas */
+    max-width: 90%; /* Definir o tamanho máximo como 90% */
+}
+
+    /* Estilo para o título dentro da seção */
+    .section-titulo-top h2 {
+        color: #0074cc; /* Cor azul para o título */
+        font-size: 24px;
+        margin: 0; /* Remover margem superior do título */
+    }
+
+
+    /* Estilo para o texto dentro da seção */
+    .section-titulo-top p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+/* Estilo para a seção com a classe "section-detalhes-imov" */
+.section-detalhes-imov {
+    background-color: #f8f8f8;
+    padding: 40px;
+    margin: 20px 20px; /* Centralizar horizontalmente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 116, 204, 0.5); /* Sombras azul claro para as bordas */
+    text-align: left;
+    max-width: 70%; /* Definir o tamanho máximo como 90% */
+    display: flex; /* Tornar flexível */
+    flex-wrap: wrap; /* Envolver os itens em várias linhas */
+    justify-content: space-between; /* Espaçamento entre as divs */
+}
+
+    /* Estilo para as divs dentro da seção */
+    .section-detalhes-imov .referencia-imovel,
+    .section-detalhes-imov .numero-visitas,
+    .section-detalhes-imov .tipo-imovel,
+    .section-detalhes-imov .area-util,
+    .section-detalhes-imov .area-total,
+    .section-detalhes-imov .quantidade-quartos,
+    .section-detalhes-imov .banheiros,
+    .section-detalhes-imov .garagem {
+        width: calc(50% - 10px); /* Largura de 50% com margem interna de 10px */
+        margin-bottom: 10px; /* Espaçamento entre as linhas */
+        font-size: 16px; /* Tamanho da fonte */
+        color: #333; /* Cor do texto */
+        background-color: #f5f5f5; /* Cor de fundo opcional */
+        padding: 10px; /* Espaçamento interno */
+        border: 1px solid #ddd; /* Borda */
+    }
+
+/* Estilo para a div de mais detalhes */
+.mais-detalhes {
+    width: 300px; /* Largura de 300px */
+    height: 600px; /* Altura de 600px */
+    background-color: #FFA500; /* Fundo laranja */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombras suaves */
+    /* Adicione outros estilos de acordo com suas necessidades */
+    position: absolute; /* Posição absoluta padrão */
+    right: 30px; /* Alinhar à direita com 30px de espaço à direita */
+    bottom: -560px; /* Fixar no fundo por padrão */
+    z-index: 999; /* Valor alto para garantir que a div esteja acima de outros elementos */
+    transition: top 0.3s; /* Adicione uma transição suave para o efeito */
+}
+
+/* Estilo para a classe "fixo" que será aplicada quando o div estiver fixo */
+.mais-detalhes.fixo {
+    position: fixed; /* Posição fixa quando estiver fixo */
+    top: 0; /* Alinhar ao topo da tela quando estiver fixo */
+    
+}
+
+
+/* Estilo para a classe "venda" */
+.venda {
+    color: #fff; /* Cor do texto branco */
+    padding: 10px; /* Preenchimento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-left: 5px; /* Espaçamento de 5px à esquerda */
+    margin-top: 5px; /* Espaçamento de 5px ao topo */
+    margin-right: 5px; /* Espaçamento de 5px à direita */
+    text-align: center;
+    border: 1px solid #000; /* Borda preta de 1px */
+}
+/* Classe para a div que contém o valor */
+/* Classe para o contêiner pai */
+.container-pai {
+    display: flex; /* Tornar o contêiner flexível */
+    justify-content: space-between; /* Alinhar os elementos filho com espaço entre eles */
+    padding: 10px; /* Espaçamento interno de 10px para todos os lados */
+    border-bottom: 1px solid #000; /* Borda inferior preta de 1px */
+}
+
+
+
+/* Classe para a palavra "Valor" */
+.valor-label {
+    font-size: 16px;
+    color: #000; /* Cor preta */
+    text-align: left; /* Alinhar à esquerda */
+}
+
+/* Classe para o preço */
+.preco {
+    font-size: 18px;
+    font-weight: bold; /* Texto em negrito */
+    color: #000; /* Cor preta */
+    text-align: right; /* Alinhar à direita */
+}
+
+
+
+
+
+/* Estilo para os links do mapa ou outros detalhes */
+.mapa-links {
+    width: 100%;
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    background-color: #f5f5f5; /* Cor de fundo opcional */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    /* Adicione outros estilos de acordo com suas necessidades */
+}
+
+
+/* Estilo para o container que envolve tudo */
+.container {
+    display: flex; /* Tornar o container flexível */
+    margin-left: 30px; /* Espaço externo à esquerda de 30px */
+    margin-right: 360px; /* Acomode a largura da .mais-detalhes (300px + 60px) */
+}
+/* Estilo para a seção com a classe "section-desc-imov" */
+.section-desc-imov {
+    background-color: #f8f8f8;
+    padding: 40px;
+    margin: 20px 20px; /* Centralizar horizontalmente */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 116, 204, 0.5); /* Sombras azul claro para as bordas */
+    text-align: left;
+    max-width: 70%; /* Definir o tamanho máximo como 90% */
+    display: flex; /* Tornar flexível */
+    flex-wrap: wrap; /* Envolver os itens em várias linhas */
+    justify-content: space-between; /* Espaçamento entre as divs */
+    position: relative; /* Posição relativa para alinhar o título */
+}
+
+    /* Estilo para o título dentro da seção */
+    .section-desc-imov h2 {
+        color: #0074cc; /* Cor azul para o título */
+        font-size: 24px;
+        margin: 0; /* Remover margem superior do título */
+        position: absolute; /* Posição absoluta para alinhar no canto superior esquerdo */
+        top: 0; /* Alinhar no topo da seção */
+        left: 0; /* Alinhar à esquerda da seção */
+        padding: 10px; /* Adicionar espaçamento interno ao título */
+        background-color: #f8f8f8; /* Cor de fundo para o título */
+        border-radius: 10px 10px 0 0; /* Arredondar apenas os cantos superiores */
+    }
+
+    /* Estilo para o parágrafo de descrição */
+    .section-desc-imov p {
+        text-align: left; /* Alinhar o texto à esquerda */
+        justify-content: justify; /* Justificar o texto */
+        font-size: 16px; /* Tamanho da fonte */
+        color: #333; /* Cor do texto */
+        margin-top: 30px; /* Espaçamento superior entre o título e o parágrafo */
+        padding: 0 10px; /* Espaçamento interno horizontal */
+    }

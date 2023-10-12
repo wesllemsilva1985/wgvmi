@@ -1,0 +1,54 @@
+﻿/* styles.css */
+
+.gridView-centralizado {
+    /* Alinhar horizontalmente ao centro */
+    margin-left: auto;
+    margin-right: auto;
+    /* Espaçamento de 10px do topo */
+    margin-top: 10px;
+    /* Outros estilos personalizados */
+}
+
+.titulo-coluna {
+    /* Adicione os estilos desejados para os títulos das colunas aqui */
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #007acc;
+    border: 1px solid black;
+    padding-left: 5px; /* Espaçamento de 5px à esquerda */
+}
+
+/* registros.css */
+
+.registro-linha {
+    /* Estilos para as linhas de registros */
+    background-color: #a4cfed; /* Cor de fundo laranja claro */
+    color: #000; /* Cor do texto nas linhas (preto) */
+    font-size: 14px; /* Tamanho da fonte */
+    border: 1px solid #000; /* Bordas pretas de 1px */
+    padding: 5px; /* Espaçamento de 5px em todas as direções */
+}
+
+    .registro-linha:hover {
+        background-color: #19a8c2; /* Cor de fundo ao passar o mouse */
+        /* Outros estilos personalizados, se necessário */
+    }
+
+.botao-estilo {
+    background-color: #FFA500; /* Cor de fundo laranja */
+    color: #ffffff; /* Cor da fonte branca */
+    border: none; /* Remova as bordas padrão */
+    border-radius: 3px; /* Borda arredondada */
+    padding: 5px 10px; /* Espaçamento interno dos botões */
+    text-align: center; /* Centralize o texto horizontalmente */
+    text-decoration: none; /* Remova a decoração de texto */
+    display: inline-block; /* Faça com que os botões se comportem como elementos de bloco */
+    font-size: 12px; /* Tamanho da fonte */
+    cursor: pointer; /* Altere o cursor para uma mão ao passar o mouse */
+    transition: background-color 0.3s ease; /* Adicione um efeito de transição suave */
+}
+
+    .botao-estilo:hover {
+        background-color: #FFD700; /* Cor de fundo laranja claro ao passar o mouse */
+    }

@@ -1,0 +1,44 @@
+﻿/* Imovel.css */
+.main-content {
+    max-width: 800px;
+    margin: 20px auto 10px; /* Alterei a margem superior para 5px */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.titulo {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px; /* Diminui o espaço vertical abaixo do título */
+}
+
+.alerta {
+    font-size: 14px;
+    color: #ff6600; /* Laranja */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px; /* Diminui o espaço vertical acima do texto de alerta */
+}
+
+.botoes-container {
+    text-align: center; /* Centraliza os botões horizontalmente */
+}
+
+.botao {
+    display: inline-block; /* Faz os botões aparecerem em linha */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px; /* Espaçamento entre os botões */
+}
+    /* Estilo de hover para os botões */
+    .botao:hover {
+        background-color: #0056b3; /* Cor de fundo mais escura no hover */
+    }
